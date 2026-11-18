@@ -13,11 +13,13 @@ This NTUA Electrical and Computer Engineering portfolio applies pattern-recognit
 
 ## Results and interpretation
 
-The Lab 1 report records 98.6667% test accuracy for the BiLSTM selected on validation results. The separate GMM-HMM run recorded 94.67% test accuracy. Its evaluation code can refit a digit’s HMM on training and validation data, with a new seed, if the initial test pass correctly classifies none of that digit’s examples. The recorded run shows no retries. This test-triggered rule would make a retried score dependent on the test set. The report and notebook preserve weaker configurations and the original outputs. In the Lab 2 submission, the 2D CNN on mel spectrograms achieved 41.57% test accuracy and a macro-F1 of 0.3312. Those two figures summarize a ten-class experiment with uneven per-class performance. See the [laboratory guide](lab/README.md) for the comparison with the Audio Spectrogram Transformer and the separate affect-prediction evaluation.
+Lab 1 records 98.6667% test accuracy for the validation-selected BiLSTM and 94.67% for the separate GMM-HMM. The saved GMM-HMM output logs no test-triggered refits. The [evaluation notes](lab/README.md#evaluation-interpretation) explain the conditional refit rule and its implications.
+
+In Lab 2, the 2D CNN on mel spectrograms achieved 41.57% test accuracy and a macro-F1 of 0.3312 over ten genres, with uneven per-class performance. The [laboratory guide](lab/README.md#lab-2-music-genre-and-affect) compares the CNN with the Audio Spectrogram Transformer and describes the separate affect-prediction evaluation.
 
 ## Reproduction and external inputs
 
-Open the notebooks for direct inspection. To work from a clone, use the following repository URL.
+Open the notebooks to review the experiments, or clone the repository to work with a local copy.
 
 ```bash
 git clone https://github.com/ntua-el21026/ntua-pattern-recognition-public.git

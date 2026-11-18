@@ -55,7 +55,7 @@ Obtain the music arrays, checkpoints and course helper files through authorized 
 
 - [geoparslp/patreco3-multitask-affective-music](https://www.kaggle.com/datasets/geoparslp/patreco3-multitask-affective-music): prepared music arrays and labels.
 - [multitask-affective-music-lab-2022](https://www.kaggle.com/competitions/multitask-affective-music-lab-2022): competition source, subject to its access/participation requirements.
-- [michaelpeppas/preparation-dataset](https://www.kaggle.com/datasets/michaelpeppas/preparation-dataset): an additional source referenced by the exported setup.
+- `michaelpeppas/preparation-dataset`: historical Kaggle identifier from the exported setup. Public access to this dataset could not be verified.
 - The external `dataset.py`, `lstm.py`, `modules.py` and other course helpers come from [slp-ntua/patrec-labs](https://github.com/slp-ntua/patrec-labs). See [the recorded revision](../lab_material/README.md).
 
 Kaggle is the original execution layout. Attach the required data there and confirm that the path `../input/patreco3-multitask-affective-music/data/` resolves from the working directory. Expected subdirectories include `fma_genre_spectrograms/`, `fma_genre_spectrograms_beat/` and `multitask_dataset/`, with train/test arrays and the corresponding label files. Later cells also contain absolute `/kaggle/input/` paths. The exported Colab setup uses `kagglehub`, but later path cells do not automatically use its returned download locations; adapt all of them in a separate notebook copy for another environment.
